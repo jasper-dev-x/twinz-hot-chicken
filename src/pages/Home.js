@@ -2,16 +2,17 @@ import React from 'react';
 import Food1 from '../media/food1.jpg';
 import Food2 from '../media/food2.jpg';
 import Food3 from '../media/food3.jpg';
+import MOTTO from '../media/TwinzMotto.png';
 
 export default function Home() {
-    const XY = window.innerHeight > window.innerWidth;
+    const paddingTop = window.innerHeight * .1;
+    const width = window.innerWidth * .8 < 400 ? window.innerWidth * .8 : 400;
+    const height = width * .205;
 
     return (
-        <div className="d-flex flex-fill flex-column">
-            <div className="d-flex w-100 justify-content-center bgFade">
-                <div className="txt-Twinz text-light display-1 pb-5 my-2">
-                    <span>L</span>ove <span>a</span>t F<span>i</span>rst B<span>i</span><span>t</span>e
-                </div>
+        <div className="d-flex flex-fill flex-column" >
+            <div className="d-flex flex-fill justify-content-center pe-2 bgFade" style={ { paddingTop } }>
+                <img className="my-3" src={ MOTTO } alt="..." style={ { height, width } } />
             </div>
             <div className="container">
                 <div className="row">

@@ -3,24 +3,34 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Header from './components/Header';
+import About from './pages/About';
+import Menu from './pages/Menu';
+import Footer from './components/Footer';
 
 function App() {
   const minHeight = window.innerHeight;
 
   return (
     <BrowserRouter>
-      <div className="d-flex flex-fill flex-column" style={ { minHeight } }>
+      <div className="d-flex flex-fill flex-column bg-dark" style={ { minHeight } }>
         <Header />
-        <div className="d-flex bg-Twinz" style={ { paddingTop: minHeight * .1, minHeight } }>
+        <div className="d-flex bgZigZag" style={ { minHeight } }>
           <Switch>
             <Route path="/" exact>
               <Home />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/menu">
+              <Menu />
             </Route>
             <Route>
               <NotFound />
             </Route>
           </Switch>
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );
