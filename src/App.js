@@ -4,11 +4,11 @@ import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Header from './components/Header';
 import About from './pages/About';
-import Menu from './pages/Menu';
+import Menu from './pages/Menu/Menu';
 import Footer from './components/Footer';
 
 function App() {
-  const minHeight = window.innerHeight;
+  const minHeight = window.innerHeight - 1;
 
   return (
     <BrowserRouter>

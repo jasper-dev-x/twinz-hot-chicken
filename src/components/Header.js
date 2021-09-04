@@ -10,14 +10,14 @@ export default function Header() {
         <div className="fixed-top" style={ { height } }>
             <div id="NavMenu" className="collapse">
                 <div className="d-flex flex-fill bg-light justify-content-around p-3">
-                    <Link to="/" className="txtTwinz lead navLink">
-                        <div data-bs-toggle="collapse" data-bs-target="#NavMenu">Home</div>
+                    <Link to="/" className="txtTwinz navLink">
+                        <div data-bs-toggle="collapse" data-bs-target="#NavMenu">HOME</div>
                     </Link>
-                    <Link to="/about" className="txtTwinz lead navLink">
-                        <div data-bs-toggle="collapse" data-bs-target="#NavMenu">About</div>
+                    <Link to="/about" className="txtTwinz navLink">
+                        <div data-bs-toggle="collapse" data-bs-target="#NavMenu">ABOUT</div>
                     </Link>
-                    <Link to="/menu" className="txtTwinz lead navLink">
-                        <div data-bs-toggle="collapse" data-bs-target="#NavMenu">Menu</div>
+                    <Link to="/menu" className="txtTwinz navLink">
+                        <div data-bs-toggle="collapse" data-bs-target="#NavMenu">MENU</div>
                     </Link>
                 </div>
             </div>
@@ -25,13 +25,9 @@ export default function Header() {
             <nav className="d-flex bg-light shadow-lg header" style={ { borderBottomLeftRadius: borderRadius, borderBottomRightRadius: borderRadius } }>
                 <div className="container-fluid">
                     <div className="row d-flex flex-fill">
-                        <div className="col">
-
-                        </div>
-                        <div className="col-2 d-flex centered">
-                            <Link to="/">
-                                <img src={ LOGO } alt="..." height={ height } />
-                            </Link>
+                        <div className="col"></div>
+                        <div className="col-4 d-flex centered">
+                            <img src={ LOGO } alt="..." height={ height } />
                         </div>
                         <div className="col d-flex justify-content-end align-items-center">
                             <div className="p-2" data-bs-toggle="collapse" data-bs-target="#NavMenu">

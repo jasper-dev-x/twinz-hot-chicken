@@ -1,0 +1,23 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-twinzhotchicken-dev-93516-authRole",
+            "UnauthRoleArn": "arn:aws:iam::471721074570:role/amplify-twinzhotchicken-dev-93516-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::471721074570:role/amplify-twinzhotchicken-dev-93516-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "amplify-twinzhotchicken-dev-93516-deployment",
+            "UnauthRoleName": "amplify-twinzhotchicken-dev-93516-unauthRole",
+            "StackName": "amplify-twinzhotchicken-dev-93516",
+            "StackId": "arn:aws:cloudformation:us-east-2:471721074570:stack/amplify-twinzhotchicken-dev-93516/30f11280-f531-11eb-ac6d-0684b4ff41c8",
+            "AmplifyAppId": "d2iy9lwnrgh0mo"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d2iy9lwnrgh0mo",
+                    "type": "manual"
+                }
+            }
+        }
+    }
+}

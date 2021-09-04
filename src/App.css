@@ -12,13 +12,6 @@
   background-repeat: repeat;
 }
 
-.txtNeon {
-  font-family: 'Yellowtail', cursive;
-  -webkit-text-stroke: 1px #C62828;
-  font-weight: 600;
-  /* text-shadow: 0 0 15px #C62828; */
-}
-
 .header {
   background-color: #F7F7F7;
   border-style: solid;
@@ -42,12 +35,13 @@
 .txtTwinz {
   color: #C62828;
   font-weight: 900;
-  -webkit-text-stroke: 1px #F8E002;
+  /* -webkit-text-stroke: 1px #F8E002; */
   user-select: none;
 }
 
 .navLink {
   text-decoration: none;
+  font-size: 24px;
 }
 
 .navLink:hover {
@@ -67,4 +61,16 @@
 
 .fixed-bottom:hover {
   opacity: 1;
+}
+
+.borderTwinz {
+  background-color: #C62828;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: #F8E002;
+}
+
+.glow {
+  background-image: radial-gradient(#F7F7F7, rgba(255, 255, 255, 0));
 }
